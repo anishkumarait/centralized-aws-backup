@@ -2,7 +2,7 @@
 This repository provides a Terraform-based implementation of a centralized AWS Backup architecture for multi-account AWS environments. It enables consistent, secure, and automated backups across accounts while ensuring strong isolation and compliance.
 
 # Architecture
-
+![Architecture diagram](https://github.com/anishkumarait/centralized-aws-backup/blob/main/architecture-diagram.webp)
 The solution follows a three-account model:
 - **Management Account:** Enables AWS Backup organization-wide features and delegates backup administration.
 - **Resource (Workload) Account(s):** Host application resources (EC2, EBS, RDS, DynamoDB, etc.) where backups are taken locally.
