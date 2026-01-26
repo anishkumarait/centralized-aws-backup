@@ -6,7 +6,8 @@ This repository provides a Terraform-based implementation of a centralized AWS B
 The solution follows a three-account model:
 - **Management Account:** Enables AWS Backup organization-wide features and delegates backup administration.
 - **Resource (Workload) Account(s):** Host application resources (EC2, EBS, RDS, DynamoDB, etc.) where backups are taken locally.
-- **Central Backup Account:** Stores cross-account backup copies in dedicated vaults with stricter access controls.
+- **Central Backup Account:** Stores cross-account backup copies in dedicated vaults with stricter access controls.<br/>
+
 Backups are created in workload accounts and automatically copied to the centralized backup account where they are re-encrypted using a KMS key owned by the backup account.
 
 # How It Works
